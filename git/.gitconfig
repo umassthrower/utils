@@ -20,4 +20,5 @@
 	default = current
 [web]
 	browser = google-chrome
-
+[github]
+	user = umassthrower
