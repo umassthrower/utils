@@ -1,0 +1,29 @@
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  df = diff
+  lg = log -p
+  st = status
+  co = checkout
+  ci = commit
+  ac = !git add -A && git commit
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+
+[user]
+	name = Jeff Jason II
+	email = umassthrower@gmail.com
+
+[push]
+	default = current
+
+
+[web]
+	browser = google-chrome
+[diff]
+	tool = vimdiff
