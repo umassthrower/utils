@@ -144,23 +144,3 @@ echo "verify: jps"
 
 # and send them over to the new hd user to take it for a spin
 su - hduser
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
