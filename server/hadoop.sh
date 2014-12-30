@@ -70,7 +70,9 @@ export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
 ' >> /home/hduser/.bashrc
 
 # begin conf updates with telling hadoop about JAVA_HOME
-sed -e "s/^# export JAVA_HOME=.*$/export JAVA_HOME=\/usr\/lib\/jvm\/default-java/g" /etc/hadoop/conf.empty/hadoop-env.sh > /etc/hadoop/conf.empty/hadoop-env.sh.tmp && mv /etc/hadoop/conf.empty/hadoop-env.sh.tmp /etc/hadoop/conf.empty/hadoop-env.sh
+sed -e "s/^# export JAVA_HOME=.*$/export JAVA_HOME=\/usr\/lib\/jvm\/default-java/g" \
+/etc/hadoop/conf.empty/hadoop-env.sh > /etc/hadoop/conf.empty/hadoop-env.sh.tmp \
+&& mv /etc/hadoop/conf.empty/hadoop-env.sh.tmp /etc/hadoop/conf.empty/hadoop-env.sh
 
 # the default confs here were all essentially empty, so I am just blitzing them
 #
